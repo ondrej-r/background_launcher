@@ -1,0 +1,14 @@
+# Ignore target/ build artifacts
+/target/
+
+# Ignore IDE/editor files
+**/*.swp
+**/*.swo
+**/*.bak
+**/*.tmp
+.DS_Store
+.idea/
+.vscode/
+
+# Ignore Cargo.lock (only for libraries; keep it for binaries)
+# Cargo.lock

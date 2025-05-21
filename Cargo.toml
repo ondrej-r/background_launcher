@@ -1,0 +1,34 @@
+[package]
+name = "background_launcher"
+version = "1.0.0"
+edition = "2021"
+license = "MIT"
+description = "A set of command-line tools to launch and control apps on Windows in background and foreground"
+repository = "https://github.com/ondrej-r/background_launcher"
+readme = "README"
+keywords = ["windows", "cli", "service", "process"]
+categories = ["command-line-utilities"]
+publish = false
+
+[[bin]]
+name = "bl"
+path = "src/bin/bl.rs"
+
+[[bin]]
+name = "blg"
+path = "src/bin/blg.rs"
+
+[[bin]]
+name = "blb"
+path = "src/bin/blb.rs"
+
+[[bin]]
+name = "blf"
+path = "src/bin/blf.rs"
+
+[[bin]]
+name = "blh"
+path = "src/bin/blh.rs"
+
+[dependencies]
+windows = { version = "0.48", features = ["Win32_Foundation", "Win32_UI_WindowsAndMessaging", "Win32_System_Threading"] }
